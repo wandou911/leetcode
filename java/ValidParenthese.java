@@ -36,10 +36,10 @@ class Solution {
                     return false;
                 }
             }else{
-                stack.push(c);
+                stack.push(c);//如果是右括号 入栈
             }
         }
 
-        return stack.isEmpty();
+        return stack.isEmpty();//判断栈是否为空
     }
 }
