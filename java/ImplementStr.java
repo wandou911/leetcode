@@ -32,31 +32,5 @@ class Solution {
 
         return -1;
     }
-    // public int strStr(String haystack, String needle) {
-        
-    //     int index = 0;
-        
-    //    if (null == needle || needle.isEmpty()) {
-	//         return 0;
-	//         }
-
-	//     if(null == haystack || haystack.isEmpty()) {
-	//         return -1;
-	//         }
     
-        
-    //     for(int i=0;i<=haystack.length()-needle.length();i++)
-    //     {
-    //         String matched  = haystack.substring(i,i+needle.length());
-           
-    //         if(matched.equals(needle))
-    //         {
-                
-    //             return i;
-            
-    //         }
-    //     }
-        
-    //     return -1;
-    // }
 }
