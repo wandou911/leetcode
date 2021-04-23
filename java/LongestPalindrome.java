@@ -23,7 +23,7 @@ class Solution {
         }
 
         char[] charArray = s.toCharArray();
-
+        // 先枚举子串长度
         for (int L = 2; L <= len; L++) {
             for (int i = 0; i < len; i++) {
                 //根据左边界算出右边界
