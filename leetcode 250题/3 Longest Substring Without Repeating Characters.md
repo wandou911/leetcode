@@ -22,3 +22,36 @@ class Solution {
     }
 }
 ```
+
+
+解法2：滑动窗口
+
+```
+class Solution {
+    //滑动窗口 [l,r] 左闭右闭
+    //
+    public int lengthOfLongestSubstring(String s) {
+        int l = 0;
+        int r = -1;
+        int res = 0;
+        int[] freq = new int[256];
+        while (l < s.length()) {
+            
+            if (r+1 < s.length() && freq[s.charAt(r+1)] == 0) {
+                char ch = s.charAt(r+1);
+                r++;
+                freq[ch]++;
+            }else {
+                char ch = s.charAt(l);
+                freq[ch]--;
+                l++;
+            }
+
+            res = Math.max(res,r-l+1);
+        }
+
+        return res;
+    }
+
+}
+```
