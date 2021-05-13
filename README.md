@@ -2,7 +2,7 @@
 
 算法学习
 
-重点 250道题  https://cspiration.com/leetcodeClassification
+重点 250道题  https://www.cspiration-cn.com/#/leetcodeClassification
 
 力扣中文版 https://leetcode-cn.com
 
